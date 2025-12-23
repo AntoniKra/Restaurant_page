@@ -9,7 +9,7 @@ loadHome();
 
 const homeBtn = document.getElementById("home");
 const menuBtn = document.getElementById("menu");
-const contactBtn = document.getElementById;
+const contactBtn = document.getElementById("contact");
 const logo = document.getElementById("logo");
 
 logo.src = logoImage;
@@ -27,12 +27,12 @@ homeBtn.addEventListener("click", () => {
 
 menuBtn.addEventListener("click", () => {
   console.log("Kliknięto MENU");
-
+  clearContent();
   loadMenu();
 });
 
 contactBtn.addEventListener("click", () => {
   console.log("Kliknięto CONTACT");
-
+  clearContent();
   loadContact();
 });

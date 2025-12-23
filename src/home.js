@@ -17,10 +17,12 @@ export default function loadHome() {
   hoursContainer.classList.add("hoursContainer");
 
   const hoursTitle = document.createElement("h2");
-  hoursTitle.textContent = "HOURS";
-
+  hoursTitle.textContent = `Hours`;
   const hoursList = document.createElement("div");
   hoursList.classList.add("hours");
+  const a = [{}, {}];
+  const currentDay = new Date(new Date().setDate(20)).getDay();
+  console.log(currentDay);
   hoursList.textContent = `Sunday: 8am - 8pm
   
 Monday: 6am - 6pm

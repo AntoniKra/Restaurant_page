@@ -1,10 +1,40 @@
 import margheritaImage from "./images/margherita.jpeg";
+import pepperoniImage from "./images/pepperoni.png";
+import capricciosaImage from "./images/capricciosa.png";
+import hawaiiImage from "./images/hawajska.png";
 
 const menuData = [
   {
     title: "Margherita",
     price: "32 PLN",
     description: "sos, ser, oregano, oliwa",
+    image: margheritaImage,
+  },
+  {
+    title: "Pepperoni",
+    price: "36 PLN",
+    description:
+      "Dla fanów ostrości: sos, podwójna mozzarella, pikantne salami pepperoni.",
+    image: pepperoniImage,
+  },
+  {
+    title: "Capricciosa",
+    price: "38 PLN",
+    description:
+      "Bogata kompozycja: szynka parmeńska, pieczarki, karczochy, oliwki.",
+    image: capricciosaImage,
+  },
+  {
+    title: "Hawajska",
+    price: "35 PLN",
+    description: "Słodko-słona: sos, ser, szynka gotowana, soczysty ananas.",
+    image: hawaiiImage,
+  },
+  {
+    title: "Wegetariańska",
+    price: "34 PLN",
+    description:
+      "Ogród na talerzu: papryka, kukurydza, cebula czerwona, pomidorki cherry.",
     image: margheritaImage,
   },
 ];
@@ -23,6 +53,7 @@ function addToMenu(pizza) {
   const image = document.createElement("img");
   image.src = pizza.image;
   image.alt = pizza.title;
+  image.classList.add("imageMenu");
 
   const price = document.createElement("div");
   price.classList.add("price");
