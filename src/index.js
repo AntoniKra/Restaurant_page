@@ -1,5 +1,4 @@
-// 1. IMPORTY (Kluczowe dla Webpacka!)
-import "./style.css"; // To łączy CSS
+import "./style.css";
 import loadHome from "./home";
 import loadMenu from "./menu";
 import loadContact from "./contact";
