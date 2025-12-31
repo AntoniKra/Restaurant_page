@@ -5,12 +5,13 @@ body {
   flex-direction: column;
   align-items: center;
   color: aliceblue;
+  min-height: 100vh;
 }
 #content {
   background-color: rgb(30, 30, 30);
   border: 5px solid none;
   padding: 20px;
-  height: fit-content;
+  flex: 1;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -81,7 +82,7 @@ nav button {
 .card {
   border: solid 2px rgb(225, 107, 107);
   border-radius: 14px;
-  padding: 20px 30px;
+  padding: 1cqw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -96,29 +97,74 @@ nav button {
 }
 
 .price {
-  margin-top: 30px;
-  font-size: 20px;
+  margin-top: 1cqw;
+  font-size: 1cqw;
   font-weight: 700;
   color: rgb(225, 107, 107);
 }
 
 .description {
-  font-size: 16px;
+  font-size: 0.8cqw;
   font-weight: 700;
+  text-align: center;
 }
 
 .dishName {
-  font-size: 1.5cqw;
+  font-size: 1.4cqw;
 }
 
 .imageMenu {
   border: solid 2px aliceblue;
   border-radius: 14px;
-  width: 12vw;
+  width: 10vw;
 }
 
 .menuList {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 30px;
+  gap: 1cqw;
+}
+
+.contactContener {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.contactContener div {
+  display: flex;
+  align-items: center;
+  gap: 1.3cqw;
+  font-size: 1cqw;
+  color: rgb(211, 210, 210) ;
+}
+
+.fa-instagram {
+  font-size: 1.4cqw;
+  color: rgb(134, 16, 134);
+}
+
+.fa-facebook {
+  color: rgb(41, 41, 199);
+  font-size: 1.4cqw;
+}
+
+.fa-twitter {
+  color: rgb(48, 144, 182);
+  font-size: 1.4cqw;
+}
+
+.fa-youtube {
+  color: rgb(190, 2, 2);
+  font-size: 1.4cqw;
+}
+
+footer {
+  background-color: black;
+  color: rgb(225, 107, 107);
+  width: 100vw;
+  text-align: center;
+  margin-top: auto;
+  padding: 1.2cqw;
 }
